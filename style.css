@@ -5,6 +5,7 @@
     font-family: 'poppins', sans-serif ;
     box-sizing: border-box;
 }
+
 body{
     display: flex;
     justify-content: center;
@@ -20,6 +21,8 @@ body{
 }
 .box{
     transform-style: preserve-3d;
+
+    /* animation 1*/
     animation: rotation 15s linear infinite;
 
 }
@@ -33,15 +36,20 @@ body{
     align-items: center;
     font-size: 3.5em;
     text-shadow:    0 5px 15px rgba(0,0,0,0.5);
+
+    /*Multiplier les span*/
     transform: translate(-50%,-50%)rotateX(calc(var(--a)*30deg))translateZ(100px);
     position: absolute;
     transform-style: preserve-3d;
+
+    /* animation 2*/
+    
     animation : text-animation 10s linear forwards;
     
 }
 span p{
     margin-right: 10px;
-    background-color: blue;
+    background-color: red;
     padding: 0 5px;
     border: 2px solid #fff;
 
